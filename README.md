@@ -1,4 +1,5 @@
-# 📰 News Website React App
+# 📰 NewsSphere - A Fullstack News Website Built with React
+
 
 ## 🌐 Overview
 
