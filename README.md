@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# News Website React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a responsive React news website that displays a list of news articles with images, titles, categories, and descriptions. Users can view the latest news and click on articles to see details.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Fetches news articles from a backend API
+- Displays news in a card-based grid layout with images
+- Responsive design for desktop and mobile
+- Navigation with React Router for article detail pages
+- Categories displayed on each news card
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+/src /components  
+- PostList.jsx # Displays all news cards  
+- PostDetail.jsx # Displays detailed news article  
+- Home.jsx # Home page with post list and routing  
+- PostList.css # CSS for news cards  
+- App.jsx # Main app with routing and navbar
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup Instructions
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone <repository-url>
+cd <repository-folder>
+```
 
-### `npm run eject`
+2. Install dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Start the React development server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Ensure your backend API is running and accessible at `http://localhost:5000/posts`
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Backend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The backend is expected to provide a REST API endpoint `/posts` returning news articles in JSON format with the following fields:
 
-### Code Splitting
+```json
+[
+  {
+    "_id": "unique-id",
+    "title": "News Title",
+    "description": "Detailed description of the news",
+    "image": "https://link-to-image.jpg",
+    "category": "Category Name",
+    "date": "2025-06-01"
+  }
+]
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- React  
+- React Router DOM  
+- Axios  
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Future Enhancements
 
-### Advanced Configuration
+- Add pagination or infinite scroll  
+- Add search and filtering by category  
+- Implement user authentication for submitting news  
+- Use Markdown rendering for descriptions  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Saksham jaiswal 
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
