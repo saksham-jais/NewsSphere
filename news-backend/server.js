@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-const Post = require("./models/Post"); // make sure this path is correct
+const Post = require("./models/post"); // make sure this path is correct
 
 const app = express();
 const PORT = process.env.PORT || 5000;
