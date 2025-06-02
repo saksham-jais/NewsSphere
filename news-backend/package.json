@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npx nodemon server.js",
+    "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve":"npx nodemon server.js"
   },
