@@ -13,7 +13,7 @@ export default function PostDetail() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://192.168.1.3:5000/posts/${id}`)
+      .get(`${process.env.REACT_APP_API_URL}/posts/${id}`)
       .then((res) => {
         setPost(res.data);
         setLoading(false);
