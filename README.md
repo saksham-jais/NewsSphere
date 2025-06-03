@@ -98,11 +98,8 @@ You can easily convert NewsSphere into a full-fledged mini blog system with thes
 
 ## 🔧 Frontend Components
 - CreatePost.jsx – Form to add new blog posts (with auth)
-
 - CategoryFilter.jsx – Category-based filtering
-
 - MarkdownRenderer.jsx – Render Markdown content beautifully
-
 - Nav bar.jsx – Add top navigation with routing links
 
 ## 🌐 Backend Endpoints
