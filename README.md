@@ -55,7 +55,7 @@ npm start
 ```
 
 🔧 Backend API is running and accessible at:  
-`https://newssphere-1pah.onrender.com/posts`
+[🔗](https://newssphere-1pah.onrender.com/posts)`https://newssphere-1pah.onrender.com/posts`
 
 ---
 
