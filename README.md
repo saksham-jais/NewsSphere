@@ -54,7 +54,7 @@ npm install
 npm start
 ```
 
-🔧 Make sure your backend API is running and accessible at:  
+🔧 Backend API is running and accessible at:  
 `https://newssphere-1pah.onrender.com/posts`
 
 ---
